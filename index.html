@@ -46,7 +46,7 @@
         text-center
         ">Slam Dunk</h1>
         <div class="row">
-            <div class="col-xs-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
                 <div class="card">
                     <img src="https://static.wikia.nocookie.net/slamdunk/images/1/16/Sendoh.png/revision/latest?cb=20140907022445&path-prefix=es" class="card-img-top" alt="Imagen de sendoh">
                     <div class="card-body">
@@ -58,7 +58,7 @@
                     </div>
                 </div><!--Fin card-->
             </div><!--Fin col-->
-            <div class="col-xs-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
                 <div class="card">
                     <img src="https://static.wikia.nocookie.net/slamdunk/images/1/16/Sendoh.png/revision/latest?cb=20140907022445&path-prefix=es" class="card-img-top" alt="Imagen de sendoh">
                     <div class="card-body">
@@ -70,7 +70,7 @@
                     </div>
                 </div><!--Fin card-->
             </div><!--Fin col-->
-            <div class="col-xs-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
                 <div class="card">
                     <img src="https://static.wikia.nocookie.net/slamdunk/images/1/16/Sendoh.png/revision/latest?cb=20140907022445&path-prefix=es" class="card-img-top" alt="Imagen de sendoh">
                     <div class="card-body">
@@ -82,7 +82,7 @@
                     </div>
                 </div><!--Fin card-->
             </div><!--Fin col-->
-            <div class="col-xs-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
                 <div class="card">
                     <img src="https://static.wikia.nocookie.net/slamdunk/images/1/16/Sendoh.png/revision/latest?cb=20140907022445&path-prefix=es" class="card-img-top" alt="Imagen de sendoh">
                     <div class="card-body">
@@ -97,20 +97,54 @@
         </div><!--Fin row-->
         <div class="row mt-2">
             <div class="col-xl-8 col-md-8 col-sm-12 col-xs-12 mx-auto bg-danger rounded">
+                 <div class="row d-flex justify-content-center">
+            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 bg-primary rounded mt-2 mb-2">
                 <form>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label text-white mt-2">Agregue su correo</label>
-                        <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                                <label for="lblEmail" class="text-white form-label mt-2">Agregue su email</label>
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su email">
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                                <label for="lblNombre" class="text-white form-label mt-2">Agregue su Nombre</label>
+                                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>                                                
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label text-white">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="lblPassword" class="text-white form-label">Password</label>
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Ingrese su contraseña">
                     </div>                    
-                    <button type="submit" class="btn btn-primary mb-2"><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;Guardar
-                    </button>
-                </form>
+                    <button type="submit" id="btnGuardar" class="btn btn-outline-warning mb-2"><i class="fa-solid fa-inbox"></i>&nbsp;&nbsp;Entrar</button>
+                </form><!--Fin form-->
+            </div><!--Fin col-->
+        </div><!--Fin row-->
             </div>
         </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 bg-primary rounded mt-2 mb-2">
+                <form>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                                <label for="lblEmail" class="text-white form-label mt-2">Agregue su email</label>
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su email">
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                                <label for="lblNombre" class="text-white form-label mt-2">Agregue su Nombre</label>
+                                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>                                                
+                    </div>
+                    <div class="mb-3">
+                        <label for="lblPassword" class="text-white form-label">Password</label>
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Ingrese su contraseña">
+                    </div>                    
+                    <button type="submit" id="btnGuardar" class="btn btn-outline-warning mb-2"><i class="fa-solid fa-inbox"></i>&nbsp;&nbsp;Entrar</button>
+                </form><!--Fin form-->
+            </div><!--Fin col-->
+        </div><!--Fin row-->
     </div>
     
     
