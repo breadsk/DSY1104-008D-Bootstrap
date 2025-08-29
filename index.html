@@ -44,7 +44,32 @@
         bg-gradient
         text-white
         text-center
-        ">Slam Dunk</h1>
+        ">Slam Dunk</h1>        
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 bg-warning rounded mt-2 mb-2">
+                <form>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <label for="txtEmail" class="text-white form-label mt-1 mb-1">Agregue su email</label>
+                                <label id="lblEmailError" class="form-label text-danger">Error al ingresar su correo</label>
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su email">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <label for="lblNombre" class="text-white form-label mt-2">Agregue su Nombre</label>
+                                <label id="lblNombreError" class="form-label text-danger mt-2">Error al ingresar su nombre</label>
+                                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>                                                
+                    </div>
+                    <div class="mb-3">
+                        <label for="lblPassword" class="text-white form-label">Password</label>
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Ingrese su contraseña">
+                    </div>                    
+                    <button type="submit" id="btnGuardar" class="btn btn-outline-danger mb-2"><i class="fa-solid fa-inbox"></i>&nbsp;&nbsp;Entrar</button>
+                </form><!--Fin form-->
+            </div><!--Fin col-->
+        </div><!--Fin row-->
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
                 <div class="card">
@@ -95,60 +120,11 @@
                 </div><!--Fin card-->
             </div><!--Fin col-->
         </div><!--Fin row-->
-        <div class="row mt-2">
-            <div class="col-xl-8 col-md-8 col-sm-12 col-xs-12 mx-auto bg-danger rounded">
-                 <div class="row d-flex justify-content-center">
-            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 bg-primary rounded mt-2 mb-2">
-                <form>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
-                                <label for="lblEmail" class="text-white form-label mt-2">Agregue su email</label>
-                                <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su email">
-                            </div>
-                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
-                                <label for="lblNombre" class="text-white form-label mt-2">Agregue su Nombre</label>
-                                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
-                            </div>
-                        </div>                                                
-                    </div>
-                    <div class="mb-3">
-                        <label for="lblPassword" class="text-white form-label">Password</label>
-                        <input type="password" class="form-control" id="txtPassword" placeholder="Ingrese su contraseña">
-                    </div>                    
-                    <button type="submit" id="btnGuardar" class="btn btn-outline-warning mb-2"><i class="fa-solid fa-inbox"></i>&nbsp;&nbsp;Entrar</button>
-                </form><!--Fin form-->
-            </div><!--Fin col-->
-        </div><!--Fin row-->
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 bg-primary rounded mt-2 mb-2">
-                <form>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
-                                <label for="lblEmail" class="text-white form-label mt-2">Agregue su email</label>
-                                <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su email">
-                            </div>
-                            <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
-                                <label for="lblNombre" class="text-white form-label mt-2">Agregue su Nombre</label>
-                                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
-                            </div>
-                        </div>                                                
-                    </div>
-                    <div class="mb-3">
-                        <label for="lblPassword" class="text-white form-label">Password</label>
-                        <input type="password" class="form-control" id="txtPassword" placeholder="Ingrese su contraseña">
-                    </div>                    
-                    <button type="submit" id="btnGuardar" class="btn btn-outline-warning mb-2"><i class="fa-solid fa-inbox"></i>&nbsp;&nbsp;Entrar</button>
-                </form><!--Fin form-->
-            </div><!--Fin col-->
-        </div><!--Fin row-->
-    </div>
+    </div><!--Fin container-->
     
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/bf539c3725.js" crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
